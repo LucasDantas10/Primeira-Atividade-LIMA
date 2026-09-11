@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagens Responsivas</title>
+    <style>
+      .imagem-responsiva {
+        height: auto;
+        max-width: 100%;
+        display: block;
+      }
+      .css-alternativo{
+        width: 100%;
+        height: auto;
+        max-width: 1200px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Imagens Responsivas</h1>
+    <p>
+      Para voltar para a página inicial clique no botão
+      <a href="index.html"><button>voltar</button></a>
+    </p>
+    <h2>Imagem Responsiva com HTML puro</h2>
+
+    <picture>
+      <source
+        media="(max-width:750px)"
+        srcset="images/imagem_300.jpg"
+        type="image/jpg"
+      />
+      <source
+        media="(max-width:1050px)"
+        srcset="images/imagem_600.jpg"
+        type="image/jpg"
+      />
+      <img src="images/imagem_1200.jpg" alt="Imagem Responsiva de paisagem" />
+    </picture>
+
+    <h2>Imagem Responsiva utilizando CSS</h2>
+    <img
+      class="imagem-responsiva"
+      src="images/imagem_1200.jpg"
+      srcset="images/imagem_300.jpg 300w, images/imagem_600.jpg 600w, images/imagem_1200.jpg 1200w"
+      sizes="(max-width: 1200px) 100vw, 1200px"
+      alt="Imagem de paisagem Responsiva utilizando CSS"
+      width="1200"
+      height="auto"
+      loading="lazy"
+    />
+    <h2>Imagem Responsiva alternativa com CSS</h2>
+    <img src="images/imagem_1200.jpg" alt="Beautiful place" class="css-alternativo">
+  </body>
+</html>
