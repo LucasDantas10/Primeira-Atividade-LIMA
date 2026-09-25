@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(to top, rgb(219, 91, 91), rgb(150, 145, 145));
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            button{
+                width: 50%;
+                padding: 10px;
+                border-radius: 15px;
+                &:hover{
+                    transform: translateY(-2px);
+                    background-color: rgb(151, 151, 151);
+                    cursor: pointer;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Pesquisa de Satisfação NEXORA</h1>
+    <form action="">
+        <label for="nome">
+            Nome:
+        </label> 
+        <br>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+        <br>
+        <br>
+        <br>
+        <label for="email">
+            E-mail:
+        </label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+        <br><br><br>
+        <label for="idade">
+            Idade:
+        </label>
+        <br>
+        <input type="number" name="number" id="number" placeholder="Digite sua idade" required> 
+        <br><br>
+        <label for="telefone">
+            Telefone:
+        </label>
+        <br>    
+        <input type="tel" name="telefone" id="telefone" pattern="[0-9]{11}" placeholder="(11)12345-6789" required>
+
+        <h2>Avaliação Geral</h2>
+        <p>Avalie nosso atendimento</p>
+        
+        <label>
+            <input type="radio" name="opcao" value="1" required> Ótimo
+            <input type="radio" name="opcao" value="2" required> Bom
+            <input type="radio" name="opcao" value="3" required> Regular
+            <input type="radio" name="opcao" value="4" required> Ruim    
+        </label>
+        <br><br>
+        <h2>Serviços Utilizados</h2>
+        <label>
+            <input type="checkbox" name="opcao" value="1" required> Atendimento
+            <input type="checkbox" name="opcao" value="2" required> Suporte
+            <input type="checkbox" name="opcao" value="3" required> Treinamento
+            <input type="checkbox" name="opcao" value="4" required> Consultoria
+        </label>
+
+        <br><br><br>
+        <h2>Unidade atendida</h2>
+        <select name="unidade" id="">
+            <option value="americana">Americana</option>
+            <option value="santa-barbara">Santa Barbára</option>
+            <option value="piracicaba">Piracicaba</option>
+            <option value="campinas">Campinas</option>
+        </select>
+
+        <br><br><br>
+
+        <button type="submit">Enviar Pesquisa</button>
+    </form>    
+</body>
+</html>
