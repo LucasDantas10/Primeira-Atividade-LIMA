@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(92, 11, 11);
+}
+h1{
+    background-color: rgb(191, 191, 194);
+    padding: 20px;
+    border-radius: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+     &:hover{
+        transform: translateY(-3px);
+        background-color: rgb(70, 69, 68);
+        transition: .3s;
+    }
+
+}
+div{
+    display: flex;
+    justify-content: center;
+   
+}
+p{
+    color: rgb(2, 2, 2);
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+/* Aqui é apenas um comentário */
